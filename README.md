@@ -9,7 +9,7 @@
 2. Sử dụng lệnh sau để lấy code về:
 
 ```
-git clone https://github.com/ICTUDA/udastudents
+git clone https://github.com/ThanhNam-dev/BasicCodeDotNet
 ```
 
 3. Chạy code SQL bên trong:
