@@ -1,0 +1,31 @@
+﻿@model BasicCodeDotNet.Models.Entities.Product
+
+@{
+    var category = ViewData["Category"] as IEnumerable<BasicCodeDotNet.Models.Entities.Category>;
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header align-items-center d-flex">
+                <form asp-controller="Product" asp-action="Created" method="post">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Name</label>
+                        <input type="text" class="form-control" asp-for="Name" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Category</label>
+                        <select class="form-select" asp-for="Category" aria-label="Default select example">
+                            @foreach(var item in category){
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>

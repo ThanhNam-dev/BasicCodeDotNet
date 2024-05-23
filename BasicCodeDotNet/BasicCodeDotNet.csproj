@@ -1,9 +1,86 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\createPopper.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\contains.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getBoundingClientRect.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getClippingRect.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getCompositeRect.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getComputedStyle.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getDocumentElement.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getDocumentRect.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getHTMLElementScroll.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getLayoutRect.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getNodeName.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getNodeScroll.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getOffsetParent.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getParentNode.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getScrollParent.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getViewportRect.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getWindow.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getWindowScroll.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\getWindowScrollBarX.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\instanceOf.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\isLayoutViewport.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\isScrollParent.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\isTableElement.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\dom-utils\listScrollParents.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\enums.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\applyStyles.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\arrow.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\computeStyles.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\eventListeners.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\flip.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\hide.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\offset.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\popperOffsets.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\modifiers\preventOverflow.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\popper-lite.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\popper.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\computeAutoPlacement.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\computeOffsets.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\debounce.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\detectOverflow.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\expandToHashMap.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\getAltAxis.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\getBasePlacement.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\getFreshSideObject.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\getMainAxisFromPlacement.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\getOppositePlacement.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\getOppositeVariationPlacement.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\getVariation.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\math.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\mergeByName.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\mergePaddingObject.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\orderModifiers.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\rectToClientRect.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\userAgent.js" />
+		<None Include="wwwroot\assets\libs\node_modules\%40poperjs\core\lib\utils\within.js" />
+		<None Include="wwwroot\assets\libs\node_modules\ssr-window\ssr-window.esm.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\BasicCodeDotNet.Common\BasicCodeDotNet.Common.csproj" />
+		<ProjectReference Include="..\BasicCodeDotNet.Models\BasicCodeDotNet.Models.csproj" />
+	</ItemGroup>
 
 </Project>

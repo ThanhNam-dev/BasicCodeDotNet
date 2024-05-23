@@ -1,0 +1,77 @@
+﻿@model IEnumerable<BasicCodeDotNet.Models.Entities.Category>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">Categories Tables - <a asp-controller="Category" asp-action="Create">Create</a></h4>
+                
+            </div><!-- end card header -->
+
+            <div class="card-body">
+                @* <p class="text-muted">Use <code>table-bordered</code> class to show borders on all sides of the table and cells.</p> *@
+
+                <div class="live-preview">
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle table-nowrap mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="fw-medium">@item.Id</td>
+                                        <td>@item.Name</td>
+
+                                        <td>
+                                            <div class="dropdown">
+                                                <a href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="ri-more-2-fill"></i>
+                                                </a>
+
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                                    <li><a class="dropdown-item" asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="document.getElementById('dataid').value = '@item.Id'">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" asp-controller="Category" asp-action="Delete">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="dataid" />
+                    Xác nhận xoá
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Changes</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
